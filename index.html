@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="" alt="">
+    <script>
+      const img = document.querySelector('img');
+      const liffUrl = `https://liff.line.me/1656898690-mJNKKjyw?newEmployementId=TW12345&assignmentId=123`;
+      
+      const url = new URL('https://chart.googleapis.com/chart?chs=450x450&cht=qr');
+      url.searchParams.set('chl', liffUrl);
+      img.src = url.href;
+
+      console.log(new Date());
+    </script>
+</body>
+</html>
